@@ -13,7 +13,7 @@ git merge [branch name]
 
 ## For remote repo
 git remote -v
-git remote add origin [repo url]
+git remote add origin (repo url)
 git remote remove origin
 
 ## Push and Pull
