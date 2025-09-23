@@ -20,6 +20,8 @@ git remote remove origin
 git push origin main
 git pull origin main
 
+## Fetch origin
+git fetch origin
 
 
 
