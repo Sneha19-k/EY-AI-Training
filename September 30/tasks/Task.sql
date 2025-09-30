@@ -77,18 +77,16 @@ call getStudentFromCity('Delhi');
 
 -- 4  Create a stored procedure to list students with their enrolled courses.
 Delimiter $$
-create procedure getStudentsfromCourse()
+create procedure getStudentfromCourse()
 begin
-	select   s.student_id, s.name, c.course_id, c.course_name, c.credits
+	select   s.student_id, s.name, e.course_id
     from Students s
-    join Enrollments e ON s.student_id = e.student_id
-    join Courses c ON e.course_id = c.course_id;
+    join Enrollments e ON s.student_id = e.student_id;
 end$$
 Delimiter ;
-call getStudentsfromCourse();
+call getStudentfromCourse();
 
-DROP PROCEDURE IF EXISTS avgGradePerCourse;
-
+DROP PROCEDURE IF EXISTS getStudentfromCourse;
 -- 5
 Delimiter $$
 create procedure listStudentsfromCourses(in input_course_id int)
