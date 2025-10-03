@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "68dfa49b4327d5a1173a219d"
+  },
+  "student_id": 1,
+  "name": "Rahul",
+  "age": 21,
+  "city": "Mumbai",
+  "course": "AI",
+  "marks": 85,
+  "grade": "A"
+},
+{
+  "_id": {
+    "$oid": "68dfa66f4327d5a1173a219e"
+  },
+  "student_id": 2,
+  "name": "Priya",
+  "age": 22,
+  "city": "Delhi",
+  "course": "ML",
+  "marks": 90
+},
+{
+  "_id": {
+    "$oid": "68dfa66f4327d5a1173a21a0"
+  },
+  "student_id": 4,
+  "name": "Neha",
+  "age": 23,
+  "city": "Hyderabad",
+  "course": "Advanced AI",
+  "marks": 92
+},
+{
+  "_id": {
+    "$oid": "68dfa66f4327d5a1173a21a1"
+  },
+  "student_id": 5,
+  "name": "Vikram",
+  "age": 21,
+  "city": "Chennai",
+  "course": "ML",
+  "marks": 95
+}]
