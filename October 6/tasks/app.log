@@ -1,0 +1,6 @@
+2025-10-06 14:29:11,261 - INFO - this is a info message
+2025-10-06 14:29:11,262 - WARNING - this is a warning message
+2025-10-06 14:29:11,262 - ERROR - this is a error message
+2025-10-06 14:29:11,262 - CRITICAL - this is a critical message
+2025-10-06 16:06:18,402 - INFO - New student added.
+2025-10-06 16:06:18,402 - INFO - new updated file saved successfully.
