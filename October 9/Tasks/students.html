@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student List</h1>
+<table id="students-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Students will be inserted here -->
+    </tbody>
+</table>
+
+<script>
+    // Fetch students from the API
+    fetch('http://127.0.0.1:8000/students')
+        .then(response => response.json())
+        .then(data => {
+            const students = data.students;
+            const tableBody = document.querySelector("#students-table tbody");
+
+            students.forEach(student => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${student.id}</td>
+                    <td>${student.name}</td>
+                    <td>${student.age}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching students:", error);
+        });
+</script>
+
+</body>
+</html>
