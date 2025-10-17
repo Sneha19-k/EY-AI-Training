@@ -1,6 +1,0 @@
-ShipmentID,ProductID,WarehouseID,Quantity,DispatchDate,DeliveryDate,ProductName,Category,UnitPrice,Location,Capacity,TotalValue,DeliveryDays,Status
-S001,P101,W01,100,2025-10-01,2025-10-05,Laptop,Electronics,800,Mumbai,1000,80000,4,Dispatched
-S002,P102,W02,300,2025-10-02,2025-10-06,Mouse,Accessories,20,Delhi,800,6000,4,In Transit
-S003,P103,W01,150,2025-10-03,2025-10-08,Keyboard,Accessories,35,Mumbai,1000,5250,5,Delivered
-S004,P104,W03,50,2025-10-04,2025-10-09,Monitor,Electronics,150,Chennai,500,7500,5,
-S005,P105,W02,200,2025-10-05,2025-10-12,Router,Networking,90,Delhi,800,18000,7,
