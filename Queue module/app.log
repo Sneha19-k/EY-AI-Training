@@ -1,0 +1,24 @@
+2025-10-17 13:06:00,065 - ERROR - Missing ProductID or WarehouseID in update: {'ShipmentID': 'S001', 'Status': 'Dispatched'}
+2025-10-17 13:06:01,067 - ERROR - Missing ProductID or WarehouseID in update: {'ShipmentID': 'S002', 'Status': 'In Transit'}
+2025-10-17 13:06:02,068 - ERROR - Missing ProductID or WarehouseID in update: {'ShipmentID': 'S003', 'Status': 'Delivered'}
+2025-10-17 13:10:15,522 - INFO - Processing shipment S001 with status Dispatched
+2025-10-17 13:10:15,534 - INFO - Shipment S001 dispatched from warehouse W01
+2025-10-17 13:10:16,525 - INFO - Processing shipment S002 with status In Transit
+2025-10-17 13:10:17,534 - INFO - Processing shipment S003 with status Delivered
+2025-10-17 13:10:17,535 - INFO - Shipment S003 delivered successfully
+2025-10-17 13:10:18,538 - INFO - Processing shipment S004 with status nan
+2025-10-17 13:10:19,631 - INFO - Processing shipment S005 with status nan
+2025-10-17 13:11:38,573 - INFO - Processing shipment S001 with status Dispatched
+2025-10-17 13:11:38,575 - INFO - Shipment S001 dispatched from warehouse W01
+2025-10-17 13:11:39,579 - INFO - Processing shipment S002 with status In Transit
+2025-10-17 13:11:40,582 - INFO - Processing shipment S003 with status Delivered
+2025-10-17 13:11:40,583 - INFO - Shipment S003 delivered successfully
+2025-10-17 13:11:41,586 - INFO - Processing shipment S004 with status nan
+2025-10-17 13:13:15,144 - INFO - Processing shipment S005 with status nan
+2025-10-17 13:13:20,152 - INFO - Processing shipment S001 with status Dispatched
+2025-10-17 13:13:20,153 - INFO - Shipment S001 dispatched from warehouse W01
+2025-10-17 13:13:21,156 - INFO - Processing shipment S002 with status In Transit
+2025-10-17 13:13:22,159 - INFO - Processing shipment S003 with status Delivered
+2025-10-17 13:13:22,160 - INFO - Shipment S003 delivered successfully
+2025-10-17 13:13:23,162 - INFO - Processing shipment S004 with status nan
+2025-10-17 13:13:24,165 - INFO - Processing shipment S005 with status nan
