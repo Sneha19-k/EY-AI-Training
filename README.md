@@ -22,3 +22,7 @@
 - 21 Oct : Prompting, Langchain, Types of Prompting, PromptLayer Intro
 - 22 Oct : Vector Database, RAG, Langchain Intro
 - 23 Oct : OpenRouter Tutorial, Using LLMs in Projects Intro, Different Deployment Environments
+- 24 Oct : LangChain Application using OpenRouter, Chatbot with Memory
+- 27 Oct : Agentic AI, Hugging Face Intro, Sentiment Analysis using Hugging Face model.
+- 28 Oct : Agentic AI workflow using n8n, Single Agent vs MultiAgent System.
+- 29 Oct : Agentic AI Tools : Tasks on Various Memory Tools
