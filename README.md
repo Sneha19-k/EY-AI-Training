@@ -26,3 +26,4 @@
 - 27 Oct : Agentic AI, Hugging Face Intro, Sentiment Analysis using Hugging Face model.
 - 28 Oct : Agentic AI workflow using n8n, Single Agent vs MultiAgent System.
 - 29 Oct : Agentic AI Tools : Tasks on Various Memory Tools
+- 30 Oct : Multiagent coordination pattern, Azure AI foundary, CrewAI
