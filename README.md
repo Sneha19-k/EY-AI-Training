@@ -27,3 +27,6 @@
 - 28 Oct : Agentic AI workflow using n8n, Single Agent vs MultiAgent System.
 - 29 Oct : Agentic AI Tools : Tasks on Various Memory Tools
 - 30 Oct : Multiagent coordination pattern, Azure AI foundary, CrewAI
+- 31 Oct: Multiagent using API, Agent chaining
+- 3 Nov : Autogen examples, Autogen workflows using Autogen Studio
+- 4 Nov: Multiagent (used wikipedia api): saves summary to logs,  
