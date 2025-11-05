@@ -29,4 +29,4 @@
 - 30 Oct : Multiagent coordination pattern, Azure AI foundary, CrewAI
 - 31 Oct: Multiagent using API, Agent chaining
 - 3 Nov : Autogen examples, Autogen workflows using Autogen Studio
-- 4 Nov: Multiagent (used wikipedia api): saves summary to logs,  
+- 4 Nov : Multiagent (used wikipedia api): saves summary to logs, through autogen studio and langchain  
