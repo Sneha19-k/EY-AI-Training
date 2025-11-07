@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple AI Chat</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 650px; margin: auto; }
+        input, button { padding: 10px; font-size: 16px; }
+        input { width: 75%; }
+        #response { margin-top: 20px; white-space: pre-wrap; background: #f1f1f1; padding: 12px; border-radius: 6px; }
+        .history-item { background: #fafafa; border: 1px solid #ddd; padding: 10px; margin-top: 12px; border-radius: 6px; }
+        .q { font-weight: bold; }
+        .time { font-size: 12px; color: #666; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<h2>Ask a Question</h2>
+
+<input id="question" type="text" placeholder="Enter your text..." />
+<button onclick="sendQuestion()">Ask</button>
+
+<div id="response"></div>
+
+<h3>History</h3>
+<button onclick="loadHistory()">Refresh History</button>
+<div id="history"></div>
+
+<script>
+const API_BASE = "http://localhost:8000";
+
+async function sendQuestion() {
+    const q = document.getElementById("question").value.trim();
+    if (!q) {
+        document.getElementById("response").innerText = "❌ Query cannot be empty.";
+        return;
+    }
+
+    document.getElementById("response").innerText = "⏳ Thinking...";
+
+    try {
+        const res = await fetch(`${API_BASE}/generate`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ query: q })
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+            document.getElementById("response").innerText =
+                `❌ Error ${res.status}: ${data.detail}`;
+            return;
+        }
+
+        document.getElementById("response").innerText = data.response;
+        document.getElementById("question").value = "";
+
+        loadHistory();
+    } catch (err) {
+        document.getElementById("response").innerText = "Network error: " + err;
+    }
+}
+
+async function loadHistory() {
+    const historyDiv = document.getElementById("history");
+    historyDiv.innerHTML = "⏳ Loading...";
+
+    try {
+        const res = await fetch(`${API_BASE}/history`);
+        const items = await res.json();
+
+        if (!items.length) {
+            historyDiv.innerHTML = "<i>No history yet</i>";
+            return;
+        }
+
+        historyDiv.innerHTML = "";
+
+        items.slice().reverse().forEach(item => {
+            const d = new Date(item.timestamp);
+
+            historyDiv.innerHTML += `
+                <div class="history-item">
+                    <div class="time">${d.toLocaleString()}</div>
+                    <div class="q">Q: ${item.question}</div>
+                    <div class="a">A: ${item.answer}</div>
+                </div>
+            `;
+        });
+
+    } catch (err) {
+        historyDiv.innerHTML = "❌ Failed to load history";
+    }
+}
+
+loadHistory();
+</script>
+</body>
+</html>
