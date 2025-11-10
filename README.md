@@ -18,7 +18,7 @@
 - 14 Oct : Message Queueing using Threading, Azure Queue vs Service Bus
 - 15 Oct : Gen AI basic Intro, Types of Gen AI, Agentic AI Intro
 - 16 Oct : Transformers and Vector Embeddings Intro
-- 17 Oct : Milestone Project - HealthCare Analytics
+- 17 Oct : Milestone Project - Product and Warehouse Management
 - 21 Oct : Prompting, Langchain, Types of Prompting, PromptLayer Intro
 - 22 Oct : Vector Database, RAG, Langchain Intro
 - 23 Oct : OpenRouter Tutorial, Using LLMs in Projects Intro, Different Deployment Environments
@@ -29,4 +29,7 @@
 - 30 Oct : Multiagent coordination pattern, Azure AI foundary, CrewAI
 - 31 Oct: Multiagent using API, Agent chaining
 - 3 Nov : Autogen examples, Autogen workflows using Autogen Studio
-- 4 Nov : Multiagent (used wikipedia api): saves summary to logs, through autogen studio and langchain  
+- 4 Nov : Multiagent (used wikipedia api): saves summary to logs, through autogen studio and langchain
+- 5 Nov : Anomaly Detection Streamlit App
+- 6 Nov : Anomaly Detection App using Lovable.ai, Rocket.ai and claude
+- 10 Nov : Streamlit app integrated with Fast Api that handles LLM Queries, Math Operations and Reversing Words
